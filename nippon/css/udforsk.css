@@ -1,0 +1,212 @@
+/* Generel CSS for hele siden */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(245, 238, 228, 0.5);
+    display: grid;
+}
+
+/* Navbar */
+.navbar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: rgba(245, 238, 228, 1);
+    color: white;
+}
+
+.brand-title img{
+    width: 4rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.navbar-links{
+    justify-self: center;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    margin: 0 0 0 5rem;
+    padding: 0 3rem;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #0000FF;
+    padding: 1rem;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.navbar-links li a:hover{
+    transform: scale(1.2);
+}
+
+.icons{
+    margin: 0 2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: black;
+  margin: 0 .5rem;
+}
+
+
+/* Portræt af Nobu Matshuisa */
+#kokkene{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#overskrift{
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    font-size: 2.5rem;
+    align-self: flex-end;
+}
+
+#nobu-horizontal-line-1{
+    border-top: 1px solid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: span 7;
+}
+
+#nobu-navn{
+    color: #AFAFFF;
+    font-size: 2rem;
+    font-weight: lighter;
+    grid-row-start: 2;
+    align-self: end;
+    grid-column-start: 5;
+    grid-column-end: span 2;
+    z-index: 1;
+}
+
+#nobu-beskrivelse-1{
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+}
+
+#nobu-horizontal-line-2{
+    border-top: 1px solid;
+    grid-row-start: 3;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: span 5;
+    width: calc((100% / 10) * 4.5);
+}
+
+#nobu-beskrivelse-2{
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: span 5;
+    width: calc((100% / 10) * 4.6);
+}
+
+#nobu-citat{
+    grid-row-start: 4;
+    align-self: self-end;
+    grid-column-start: 2;
+    grid-column-end: span 5;
+}
+
+#nobu-underskrift{
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
+
+#nobu-billede{
+    grid-row-start: 2;
+    grid-row-end: span 4;
+    align-self: center;
+    grid-column-start: 6;
+    grid-column-end: span 3;
+    justify-self: center;
+    z-index: 0;
+}
+
+
+/* Portræt af Yoshiko Hattori */
+#yoshiko-navn{
+    color: #AFAFFF;
+    font-size: 2rem;
+    font-weight: lighter;
+    grid-row-start: 6;
+    align-self: center;
+    grid-column-start: 4;
+    grid-column-end: span 2;
+    z-index: 1;
+}
+
+#yoshiko-beskrivelse-1{
+    grid-column-start: 6;
+    grid-column-end: span 3;
+    align-self: self-start;
+    grid-row-start: 7;
+    width: calc((100% / 10) * 8.1);
+}
+
+#yoshiko-horizontal-line{
+    border-top: 1px solid;
+    grid-row-start: 7;
+    align-self: center;
+    grid-column-start: 6;
+    grid-column-end: span 5;
+    width: calc((100% / 10) * 4.5);
+}
+
+#yoshiko-beskrivelse-2{
+    grid-row-start: 7;
+    grid-row-end: span 2;
+    align-self: center;
+    grid-column-start: 6;
+    grid-column-end: span 5;
+    width: calc((100% / 10) * 4.6);
+}
+
+#yoshiko-citat{
+    grid-row-start: 8;
+    align-self: self-end;
+    grid-column-start: 6;
+    grid-column-end: span 5;
+}
+
+#yoshiko-underskrift{
+    grid-row-start: 9;
+    grid-column-start: 6;
+}
+
+#yoshiko-billede{
+    grid-row-start: 6;
+    grid-row-end: span 3;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    justify-self: center;
+    z-index: 0;
+}

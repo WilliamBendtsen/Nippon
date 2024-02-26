@@ -1,0 +1,172 @@
+/* Generel CSS for hele siden */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(245, 238, 228, 0.5);
+}
+
+/* Navbar */
+.navbar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: rgba(245, 238, 228, 1);
+}
+
+.brand-title img{
+    width: 4rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.navbar-links{
+    justify-self: center;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    margin: 0 0 0 5rem;
+    padding: 0 3rem;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #0000FF;
+    padding: 1rem;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.navbar-links li a:hover{
+    transform: scale(1.2);
+}
+
+.navbar-icons{
+    margin: 0 2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24;
+  color: black;
+  margin: 0 .5rem;
+}
+
+/* Filter */
+
+
+/* Main section */
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+}
+
+/* De forskellige pakker */
+#oplevelsespakke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    grid-column-start: 2;
+    width: 100%;
+    height: 33rem;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+#hverdagspakke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    grid-column-start: 4;
+    width: 100%;
+    height: 33rem;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+#redskabspakke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    grid-column-start: 2;
+    width: 100%;
+    height: 33rem;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+#ingredienspakke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    grid-template-columns: auto;
+    background-color: white;
+    grid-column-start: 4;
+    width: 100%;
+    height: 33rem;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+#oplevelsespakke img,
+#hverdagspakke img,
+#redskabspakke img,
+#ingredienspakke img{
+    width: 60%;
+    justify-self: center;
+}
+
+#oplevelsespakke h2,
+#hverdagspakke h2,
+#redskabspakke h2,
+#ingredienspakke h2{
+    justify-self: center;
+    font-size: 2rem;
+}
+
+#oplevelsespakke p,
+#hverdagspakke p,
+#redskabspakke p,
+#ingredienspakke p{
+    justify-self: center;
+    font-size: 1.5rem;
+    max-width: 15rem;
+}
+
+.btn {
+    margin-right: 8rem;
+    width: 30%;
+    height: 2rem;
+    border-radius: 100px;
+    border-color: #FEDBFA;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+    background-color: rgba(245, 238, 228, 1);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    color: #4C3B3B ;
+ }

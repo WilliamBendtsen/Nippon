@@ -1,0 +1,226 @@
+/* Generel CSS for hele siden */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(245, 238, 228, 0.5);
+}
+
+/* Hero section */
+.hero{
+    height: 100vh;
+    background-color: rgba(245, 238, 228, 0.5);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.hero-content-1{
+    display: grid;
+    align-items: center;
+}
+
+#hero-logo{
+    width: 9rem;
+    grid-column-start: 3;
+    justify-self: center;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    align-self: center;
+}
+
+#hero-waves-1{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: flex-end;
+    width: auto;
+    height: 3rem;
+}
+
+#hero-waves-2{
+    grid-column-start: 4;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    justify-self: end;
+    align-self: flex-end;
+    width: auto;
+    height: 3rem;
+}
+
+.hero-icons{
+    grid-column-start: 5;
+    grid-row-start: 1;
+    align-self: center;
+    justify-self: end;
+}
+
+#hero-menupunkt-1{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+#hero-menupunkt-2{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+#hero-menupunkt-3{
+    grid-column-start: 5;
+    grid-row-start: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+#hero-billede{
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    grid-row-start: 4;
+    width: 100%;
+}
+
+.hero h1{
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    justify-self: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.hero p{
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    justify-self: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+#hero-pil{
+    grid-row-start: 10;
+    grid-column-start: 3;
+    justify-self: center;
+}
+
+/* Navbar */
+.navbar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: rgba(245, 238, 228, 1);
+    color: white;
+}
+
+.brand-title img{
+    width: 4rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.navbar-links{
+    justify-self: center;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    margin: 0 0 0 5rem;
+    padding: 0 3rem;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #0000FF;
+    padding: 1rem;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.navbar-links li a:hover{
+    transform: scale(1.2);
+}
+
+.navbar-icons{
+    margin: 0 2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24;
+  color: black;
+  margin: 0 .5rem;
+}
+
+/* Main section */
+#main-content{
+    display: grid;
+}
+
+/* Oplevelsespakke teaser */
+.oplevelsespakke-teaser{
+    background-color: rgba(245, 238, 228, 1);
+    width: 95%;
+    height: 20rem;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+/* Tekst på midten af siden */
+.middle-text{
+    color: #0000FF;
+    justify-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/* Knap på midten af siden */
+.btn {
+    width: 20%;
+    justify-self: center;
+    border-radius: 100px;
+    border-color: #FEDBFA;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: .5rem 0;
+    background-color: rgba(245, 238, 228, 1);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    color: #0000FF ;
+ }
+
+ /* Mix din egen ramen bowl */
+ .ramen{
+    background-color: rgba(245, 238, 228, 1);
+    width: 95%;
+    height: 15rem;
+    margin-top: 2rem;
+    justify-self: center;
+ }
