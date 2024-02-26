@@ -38,6 +38,8 @@ body{
 
 #hero-waves-1{
     grid-column-start: 1;
+    grid-column-end: span 5;
+    width: 100%;
     grid-row-start: 2;
     align-self: flex-end;
     width: auto;
@@ -94,22 +96,22 @@ body{
 }
 
 .hero h1{
-    grid-row-start: 6;
+    grid-row-start: 5;
     grid-column-start: 2;
     grid-column-end: span 3;
     justify-self: center;
     font-size: 3rem;
-    color: #0000FF;
+    color: #4C3B3B;
 }
 
 .hero p{
-    grid-row-start: 7;
+    grid-row-start: 6;
     grid-column-start: 1;
     grid-column-end: span 5;
     justify-self: center;
     text-align: center;
     font-size: 2rem;
-    color: #0000FF;
+    color: #4C3B3B;
 }
 
 #hero-pil{
