@@ -32,7 +32,6 @@
         </div>
             </nav>
 
-
             <!-- Main section -->
 <main>
 
@@ -40,9 +39,18 @@
         <img src="img/illustrationer/oplevelse-kasse.png" alt="oplevelsespakken">
         <h2>Oplevelsespakken</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, animi?</p>
-        <button class="btn">Læs Mere</button>
+        <button id="oplevelsespakke-laes-mere" class="btn">Læs Mere</button>
     </section>
 
+    <!-- Popup til Oplevelsespakken -->
+    <dialog id="oplevelsespakke-modal">
+        <h2>Oplevelseskassen</h2>
+        <a href="#">Om Kassen</a>
+        <p>Friske Håndlavede Dumplings, med en fyldig ramenskål.</p>
+        <button id="oplevelsespakke-kryds">Close</button>
+    </dialog>
+
+    <!-- Resten af pakkerne -->
     <section id="hverdagspakke">
         <img src="img/illustrationer/hverdag-kasse.png" alt="hverdagspakken">
         <h2>Hverdagspakken</h2>
@@ -65,6 +73,6 @@
     </section>
 </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/maeltidskasser.js"></script>
 </body>
 </html>
