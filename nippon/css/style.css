@@ -38,7 +38,7 @@ body{
 
 #hero-waves-1{
     grid-column-start: 1;
-    grid-column-end: span 5;
+    grid-column-end: 5;
     width: 100%;
     grid-row-start: 2;
     align-self: flex-end;
@@ -46,15 +46,7 @@ body{
     height: 3rem;
 }
 
-#hero-waves-2{
-    grid-column-start: 4;
-    grid-column-end: span 2;
-    grid-row-start: 2;
-    justify-self: end;
-    align-self: flex-end;
-    width: auto;
-    height: 3rem;
-}
+
 
 .hero-icons{
     grid-column-start: 5;
