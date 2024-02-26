@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Sulphur Point", sans-serif;
-    background-color: #f5eee4; /* Ændr farven efter behov */
+    background-color: #f5eee4; 
     color: #4C3B3B;
     display: flex;
     justify-content: center;
@@ -15,23 +15,24 @@ body {
   }
   
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     margin-top: 20%;
     margin-bottom: -1%;
   }
   
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   img {
-    width: 35%;
+    width: 30%;
     max-width: 100%;
     height: auto;
     margin-top: 1%;
   }
   
-  p {
-    font-size: 2rem;
-    text-decoration: underline;
+  a {
+    font-size: 1.5rem;
+    font-family: "Sulphur Point", sans-serif;
+    color: #4C3B3B;
   }
