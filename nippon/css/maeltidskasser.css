@@ -139,6 +139,7 @@ main{
 #ingredienspakke img{
     width: 60%;
     justify-self: center;
+    margin-top: 0.5rem;
 }
 
 #oplevelsespakke h2,
