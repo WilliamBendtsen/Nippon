@@ -93,6 +93,35 @@ main{
     justify-self: center;
 }
 
+:modal{
+    width: 70rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+:modal i{
+    grid-column: 10;
+    justify-self: end;
+    
+}
+
+:modal h2{
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    align-self: end;
+    font-size: 2rem;
+}
+
+:modal a{
+
+}
+
+#oplevelsespakke-kryds{
+    cursor: pointer;
+}
+
 #hverdagspakke{
     display: flex;
     flex-direction: column;

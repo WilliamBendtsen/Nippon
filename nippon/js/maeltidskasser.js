@@ -7,3 +7,7 @@ const closeModal = document.querySelector('#oplevelsespakke-kryds');
 openModal.addEventListener('click', () => {
     modal.showModal();
 })
+
+closeModal.addEventListener('click', () => {
+    modal.close();
+})
