@@ -1,6 +1,6 @@
 "use strict"
 document.addEventListener("DOMContentLoaded", function() {
-    var scrollDownLinks = document.querySelectorAll('.scroll-down-link');
+    var scrollDownLinks = document.querySelectorAll('#hero-pil');
     scrollDownLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
