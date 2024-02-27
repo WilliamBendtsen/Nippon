@@ -143,3 +143,78 @@ main a {
   grid-row-end: span 2;
   align-self: center;
   }
+
+   /* Styling af footer */
+   /* Styling af billede i footer */
+.footer img {
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+ .footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5EEE4;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.stor-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.stor-container ul {
+  list-style: none;
+  line-height: 1.5rem;
+  padding: 1rem 8.5rem;
+}
+
+.stor-container h4 {
+  margin: 0; 
+}
+
+/* Styling af nyhedsbrev */
+.nyhedsbrev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="email"] {
+  padding: 5px;
+  border: 1px solid #4C3B3B; 
+  background-color: #FAF6F2;
+  font-family: inherit;
+}
+
+button {
+  padding: 5px;
+  border: 1px solid #4C3B3B;
+  background-color: #F5EEE4;
+  cursor: pointer;
+  font-family: inherit;
+  margin: 0 5px;
+}
+
+
+/* Styling af socials */
+footer .socials {
+  padding: 1rem;
+  color: #4C3B3B;
+}
+
+.socials {
+  margin-left: -1.8rem;
+}
+
+.socials a {
+  font-size: 25px;
+  color: inherit;
+  line-height: 38px;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0 15px;
+  color: #0000FF;
+}
