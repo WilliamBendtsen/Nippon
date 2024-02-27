@@ -110,6 +110,19 @@ body{
     color: #4C3B3B;
     font-size: 2rem;
     font-weight: lighter;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+      }
+      40% {
+        transform: translateY(-10px); /* Bounce up */
+      }
+      60% {
+        transform: translateY(-10px); /* Bounce down slightly */
+      }
 }
 
 /* Navbar */
