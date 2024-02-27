@@ -15,7 +15,7 @@ main {
     text-align: center;
   }
 
-/* Navbar */
+/* Styling Navbar */
 .navbar{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -68,6 +68,7 @@ main {
   grid-row-start: 4;
 }
 
+
 #navbar-link3{
   grid-column-start: 5;
   grid-row-start: 4;
@@ -89,6 +90,47 @@ main {
   color: #4C3B3B;
   margin: 0 .5rem;
 }
+
+
+/* Styling af dropdown menu */
+
+.dropdown-content {
+  display: none;
+}
+
+#navbar-link2:hover + .dropdown-content{
+display: block;
+}
+
+.dropdown-content {
+  grid-column: 3 / span 2;
+  align-self: start;
+  justify-self: center;
+  grid-row-start: 5;
+}
+
+.dropdown-content {
+  z-index: 1000;
+  list-style-type: none;
+}
+
+.dropdown-content {
+  background-color: rgba(245, 238, 228, 1);
+  padding: 10px;
+}
+
+.dropdown-content li a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  font-size: 0.75em;
+ }
+
+ .dropdown-content li a:hover {
+  color: #4C3B3B;
+ }
+
+/* Styling navbar slut */
 
 /* Styling af main  */
 main{
