@@ -212,6 +212,11 @@ body{
 }
 
  /* Styling af footer */
+ /* Styling af billede i footer */
+.footer img {
+    width: 100%;
+    transform: rotate(180deg);
+}
  .footer {
     display: flex;
     flex-direction: column;
