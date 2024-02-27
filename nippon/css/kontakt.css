@@ -1,79 +1,79 @@
-/* Generel CSS for hele siden */
 *{
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-body{
     margin: 0;
     padding: 0;
-    font-family: "Sulphur Point", sans-serif;
-    color: #4C3B3B;
-    font-weight: 400;
-    font-style: normal;
-    background-color: rgba(245, 238, 228, 0.5);
-}
+    text-decoration: none;
+  }
+  
+  body {
+      font-family: "Sulphur Point", sans-serif;
+      background-color: #f8f6f0; 
+      color: #4C3B3B;
+      height: 100vh;
+    }
+ 
+    /* styling af kontakt overskrift */
+    h1 {
+        text-align:center;
+        margin-top: 5%;
+        font-size: 3rem;
+    }
 
+    h2 {
+        margin: 3%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+    }
 
-/* overskrift */
+    p {
+        color: #0000FF;
+        margin-top: 3%;
+        margin-left: 14.5%;
+        font-size: 1.2rem;
+    }
 
-.overskrift {
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 2rem;
-}
+    /* insta container */
 
-/* h2 plus whitebox */
-.favoritter {
+    .insta-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13%;
+        margin-top: 5%;
+    }
+
+   .insta1{
+    width: 28%;
+   }
+
+   .insta2{
+    width: 30.4%;
+   }
+ 
+   /* kontakt-banner */
+   .banner1 {
     background-color: white;
-    margin-left: 18%;
-    margin-right: 18%;
-}
+    margin : 14%;
+    color: #4C3B3B;
+   }
 
-h2 {
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.3rem;
-}
-
-/* img */
-
-img {
-    width: 20%;
-    height: 20%;
-}
-
-.spisepinde {
-    width: 6%;
-}
-
-.dehydreret-tang {
-    width: 12%;
-}
-
-/*  */
-.material-symbols-outlined {
-    color:#0000FF;
-    width: 10%;
-}
-
-.tilføj {
+   a {
     color: #4C3B3B;
     text-decoration: underline;
-    font-size: 1.5rem;
-}
+   }
 
+
+   /* faqbanner */
+   .faq-img {
+    width: 10%;
+   }
+
+   /* mailbanner */
+   .mail-img {
+    width: 10%;
+   }
+ 
  /* Styling af footer */
- /* Styling af billede i footer */
-    .footer img {
-        width: 100%;
-        transform: rotate(180deg);
-    }
-    
  .footer {
     display: flex;
     flex-direction: column;
@@ -141,11 +141,3 @@ img {
     padding: 0 15px;
     color: #0000FF;
  }
-
-
-
-
-
-
-
-

@@ -1,0 +1,299 @@
+/* Generel CSS for hele siden */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(245, 238, 228, 0.5);
+    color: #4C3B3B;
+}
+
+/* Navbar */
+.navbar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: rgba(245, 238, 228, 1);
+    color: white;
+}
+
+.brand-title img{
+    width: 4rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.navbar-links{
+    justify-self: center;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    margin: 0 0 0 5rem;
+    padding: 0 3rem;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #0000FF;
+    padding: 1rem;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.navbar-links li a:hover{
+    transform: scale(1.2);
+}
+
+.navbar-icons{
+    margin: 0 2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #4C3B3B;
+  margin: 0 .5rem;
+}
+
+/* Styling af main */
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Sætter den store container i flex, så det er nemmere at placer hvert element */
+#stor-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container1, .container2 {
+    width: 40%;
+    margin-top: 3rem;
+}
+
+/* Styling af den første container/delelement */
+.container1 {
+    margin-left: 5rem;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+    margin-right: 10rem;
+}
+
+/* Styling af h2 og a, så de står på samme linje */
+.container-7 {
+    display: flex;
+    flex-direction: row;
+}
+
+#stor-container a {
+    color: #4C3B3B;
+    text-decoration: underline;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+/* Videre styling af container */
+.container3 input {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: none; 
+    font-family: inherit;
+    color: #4C3B3B;
+}
+
+.container3 button {
+    background-color: #ffff;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    font-family: inherit;
+    color: #4C3B3B;
+}
+
+.container3 button {
+    width: 100%;
+    margin-left: 0;
+}
+
+/* Styling af den anden container/delelement */
+.container2 {
+    background-color: #ffff;
+    padding: 3rem;
+    margin-right: 5rem;
+}
+.billede-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.tekst-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tekst-container p {
+    margin-left: 3rem;
+}
+
+.p {
+    margin-left: 3rem;
+    margin-top: -1rem;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.illustration-oplevelse {
+    width: 10rem;
+}
+
+.container2 input {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 83.9%;
+    border: 1px solid #F5EEE4; 
+    font-family: inherit;
+    color: #4C3B3B;
+}
+
+.container2 button {
+    background-color: #F5EEE4;
+    border: 1px solid #F5EEE4;
+    padding: 1rem;
+    text-align: left;
+    font-family: inherit;
+    color: #4C3B3B;
+}
+
+#total-container {
+    display: flex;
+}
+
+.container-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-6 p {
+    margin-left: 3rem;
+}
+
+.container-5 p {
+    margin-top: -1rem;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.betal {
+    margin-left: 26rem;
+}
+
+.tekst-p {
+    margin-top: 5rem;
+}
+
+#abonnement {
+    width: 81.2%;
+}
+
+
+/* Styling af footer */
+/* Styling af billede i footer */
+.footer img {
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5EEE4;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+ }
+
+ .stor-container {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .stor-container ul {
+    list-style: none;
+    line-height: 1.5rem;
+    padding: 1rem 8.5rem;
+ }
+
+ .stor-container h4 {
+    margin: 0; 
+ }
+
+ /* Styling af nyhedsbrev */
+ .nyhedsbrev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ input[type="email"] {
+    padding: 5px;
+    border: 1px solid #4C3B3B; 
+    background-color: #FAF6F2;
+    font-family: inherit;
+ }
+
+ button {
+    padding: 5px;
+    border: 1px solid #4C3B3B;
+    background-color: #F5EEE4;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 0 5px;
+ }
+
+
+ /* Styling af socials */
+ footer .socials {
+    padding: 1rem;
+    color: #4C3B3B;
+ }
+
+ .socials {
+    margin-left: -1.8rem;
+ }
+
+ .socials a {
+    font-size: 25px;
+    color: inherit;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0 15px;
+    color: #0000FF;
+ }
+
+
+
+

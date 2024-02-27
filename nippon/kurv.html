@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurv</title>
+    <meta name="keywords" content="din kurv, betaling, levering, kontaktoplysninger, din ordre, ordre">
+    <meta name="description" content="Denne side viser din kurv på hjemmesiden Nippon. Her skal du udfylde kontaktoplysninger, betalingsoplysninger m.m, så vi kan sende din ordre til dig"> 
+    <title>Din kurv</title>
  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Link til font awesome iconer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="nippon/css/kurv.css">
+    <link rel="stylesheet" href="css/kurv.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar" class="navbar">
 <div class="brand-title">
-    <a href="index.html"><img src="img/nippon-logo-2.webp" alt="Nippon Logo 2"></a>
+    <a href="index.html"><img src="img/illustrationer/nippon-logo-2.webp" alt="Nippon Logo 2"></a>
 </div>
 
 <div class="navbar-links">
@@ -37,51 +39,111 @@
 
     <!-- Main section -->
     <main>
-        <h1>Din kurv</h1>
+        <h1>Din kurv</h1> 
+
         <section id="stor-container">
             <section class="container1">
-                <h2>Har du en konto? </h2> <a href="#">Log in</a>
+                <div class="container-7">
+                    <h2>Har du en konto? </h2> 
+                    <a href="#">Log in</a>
+                </div>
                 <h3>Kontaktoplysninger</h3>
-                <input type="navn" id="navn" placeholder="Navn" required>
-                <input type="efternavn" id="efternavn" placeholder="Efternavn" required>
-                <input type="e-mail" id="e-mail" placeholder="E-mail" required>
-                <input type="telefonnummer" id="telefonnummer" placeholder="Telefonnummer" required>
+                <section class="container3">
+                    <input type="navn" id="navn" placeholder="Navn" required>
+                    <input type="efternavn" id="efternavn" placeholder="Efternavn" required>
+                    <input type="e-mail" id="e-mail" placeholder="E-mail" required>
+                    <input type="telefonnummer" id="telefonnummer" placeholder="Telefonnummer" required>
+                </section>
 
                 <h3>Levering</h3>
-                <input type="levering" id="levering" placeholder="Leveringsadresse" required>
-                <button type="gls">GLS</button>
+                <section class="container3">
+                    <input type="levering" id="levering" placeholder="Leveringsadresse" required>
+                    <button type="gls">GLS</button>
+                </section>
             </section>
-        </section>
 
-        <section id="container2">
+        <section class="container2">
             <h3>Ordre oversigt</h3>
             <hr>
-            <picture>
-                <img src="img/illustrationer/oplevelse-kasse.png" alt="Illustration over oplevelseskassen">
-                <p>1 x Oplevelseskasse</p>
-                <p>2 personer</p>
-                <p>549,00 kr.</p>
-            </picture>
+            <section class="billede-container">
+                <img src="img/illustrationer/oplevelse-kasse.png" class="illustration-oplevelse" alt="Illustration over oplevelseskassen">
+                <div class="container-4">
+                    <div class="tekst-container">
+                        <p>1 x Oplevelseskasse</p>
+                        <p>549,00 kr.</p>
+                    </div>
+                    <p class="p">2 personer</p>
+                </div>
+            </section>
+                    
             <input type="rabatkode" id="rabatkode" placeholder="Rabatkode eller gavekort">
             <button type="knap">Brug</button>
 
+           
             <p>Subtotal <br> 549,00 kr. </p>
             <p>Levering <br>
-            Angivet leveringsadresse</p>
-            <h3>I alt </h3>
-            <h3>DKK 549,00 kr.</h3>
-            <p>Inklusiv 99,80kr. i afgifter</p>
-            <hr>
-            <button type="betal">Betal</button>
+                Angivet leveringsadresse</p>
 
-            <p>Vidste du, at du kan bestille oplevelseskassen som abonnement? 
-                Få den lige til din dør hver måned. 
+             <section class="total-container">
+                <div class="container-5">
+                    <div class="container-6">
+                        <h3>I alt </h3>
+                        <h3>DKK 549,00 kr.</h3>
+                    </div>
+                    <p>Inklusiv 99,80kr. i afgifter</p>
+                </div>
+            </section>
+            <hr>
+            <button class="betal" type="betal">Betal</button>
+
+            <p class="tekst-p">Vidste du, at du kan bestille oplevelseskassen som abonnement? <br>
+                Få den lige til din dør hver måned. <br>
                 En kasse fyldt med en masse nye opskrifter, oplevelser og gode stunder. 
             </p>
 
             <input type="abonnement" id="abonnement" placeholder="E-mail" required>
             <button type="knap">Tilmeld</button>
         </section>
-
+    </section>
 
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <picture>
+            <img src="img/illustrationer/boelger.png" alt="Illutration over bølger">
+        </picture>
+        <section class="stor-container">
+            <ul class="lille-container">
+                <li><h4>Kontaktoplysninger</h4></li>
+                <li>Søvangen 3, 8000 Aarhus C</li>
+                <li><a href="#">support@nippon.dk</a></li>
+                <li><a href="#">+45 12 13 14 15</a></li>
+            </ul>
+
+            <ul class="lille-container">
+                <li><h4>Nyhedsbrev</h4></li>
+                <li>Tilmeld dig her:</li>
+                <li>
+                    <section class="nyhedsbrev">
+                        <input type="email" id="email" placeholder="Indtast din email" required>
+                        <button type="submit">Tilmeld</button>
+                    </section>
+                </li>
+            </ul>
+            
+
+            <ul class="lille-container">
+                <li><h4>Sociale medier</h4></li>
+                <li>Join os her:</li>
+                <li class="socials">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+</html>
