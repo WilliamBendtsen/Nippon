@@ -14,41 +14,6 @@
     <link rel="stylesheet" href="nippon/css/kurv.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-
-        <!-- Logo -->
-            <a id="hero-logo" href="index.html"><img id="hero-logo" src="img/illustrationer/nippon-logo.webp" alt="Nippon Logo Main"></a>
-
-            <!-- Navbar ikoner -->
-            <div class="hero-icons">
-                <a href="404.html"><span class="material-symbols-outlined">account_circle</span></a>
-                <a href="#"><span class="material-symbols-outlined">favorite</span></a>
-                <a href="#"><span class="material-symbols-outlined">search</span></a> 
-            </div>
-            
-            <!-- Bølger -->
-            <img id="hero-waves-1" src="img/illustrationer/boelger.png" alt="Nippon Bølger">
-            
-
-            <!-- Menupunkter -->
-            <a id="hero-menupunkt-1" href="maeltidskasser.html">MÅLTIDSKASSER</a>
-            <a id="hero-menupunkt-2" href="udforsk.html">UDFORSK NIPPON</a>
-            <a id="hero-menupunkt-3" href="#"><span class="material-symbols-outlined">shopping_cart</span></a>
-
-            <!-- Billede i baggrunden -->
-            <img id="hero-billede" src="img/fotos/hero-billede.png" alt="Nippon Velkomst">
-            
-            <!-- Velkomstskrift der skifter baseret på tidspunkt på dag -->
-            <h1>GODMORGEN - おはよう</h1>
-
-            <p>Nippon forhandler autentiske <br> asiatiske måltidskasser</p>
-       
-            <!-- Pil der scroller ned til main content -->
-            <a id="hero-pil" href="#navbar"><i class="fa-solid fa-chevron-down"></i></i></a>
-        </header>
-
-
     <!-- Navbar -->
     <nav id="navbar" class="navbar">
 <div class="brand-title">
@@ -72,6 +37,51 @@
 
     <!-- Main section -->
     <main>
+        <h1>Din kurv</h1>
+        <section id="stor-container">
+            <section class="container1">
+                <h2>Har du en konto? </h2> <a href="#">Log in</a>
+                <h3>Kontaktoplysninger</h3>
+                <input type="navn" id="navn" placeholder="Navn" required>
+                <input type="efternavn" id="efternavn" placeholder="Efternavn" required>
+                <input type="e-mail" id="e-mail" placeholder="E-mail" required>
+                <input type="telefonnummer" id="telefonnummer" placeholder="Telefonnummer" required>
 
-        
+                <h3>Levering</h3>
+                <input type="levering" id="levering" placeholder="Leveringsadresse" required>
+                <button type="gls">GLS</button>
+            </section>
+        </section>
+
+        <section id="container2">
+            <h3>Ordre oversigt</h3>
+            <hr>
+            <picture>
+                <img src="img/illustrationer/oplevelse-kasse.png" alt="Illustration over oplevelseskassen">
+                <p>1 x Oplevelseskasse</p>
+                <p>2 personer</p>
+                <p>549,00 kr.</p>
+            </picture>
+            <input type="rabatkode" id="rabatkode" placeholder="Rabatkode eller gavekort">
+            <button type="knap">Brug</button>
+
+            <p>Subtotal <br> 549,00 kr. </p>
+            <p>Levering <br>
+            Angivet leveringsadresse</p>
+            <h3>I alt </h3>
+            <h3>DKK 549,00 kr.</h3>
+            <p>Inklusiv 99,80kr. i afgifter</p>
+            <hr>
+            <button type="betal">Betal</button>
+
+            <p>Vidste du, at du kan bestille oplevelseskassen som abonnement? 
+                Få den lige til din dør hver måned. 
+                En kasse fyldt med en masse nye opskrifter, oplevelser og gode stunder. 
+            </p>
+
+            <input type="abonnement" id="abonnement" placeholder="E-mail" required>
+            <button type="knap">Tilmeld</button>
+        </section>
+
+
     </main>
