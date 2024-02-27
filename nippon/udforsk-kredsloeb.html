@@ -13,21 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Link til font awesome iconer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/udforsk2.css">
+    <link rel="stylesheet" href="css/udforsk-kredsloeb.css">
 </head>
+
 <body>
     
-<!-- Navbar -->
+<!-- Navbar START -->
 <header class="navbar">
-        
+
     <!-- Logo -->
-        <a id="navbar-logo" href="index.html"><img id="navbar-logo" src="img/illustrationer/nippon-logo.webp" alt="Nippon Logo Main"></a>
+        <a id="navbar-logo" href="index.html"><img id="navbar-logo" src="img/illustrationer/logo.navbar.png" alt="Nippon Logo Main"></a>
 
         <!-- Navbar ikoner -->
         <div class="navbar-icons">
             <a href="404.html"><span class="material-symbols-outlined">account_circle</span></a>
-            <a href="#"><span class="material-symbols-outlined">favorite</span></a>
-            <a id="hero-menupunkt-3" href="#"><span class="material-symbols-outlined">shopping_cart</span></a>
+            <a href="favoritter.html"><span class="material-symbols-outlined">favorite</span></a>
             <a href="#"><span class="material-symbols-outlined">search</span></a> 
         </div>
         
@@ -36,12 +36,25 @@
         
 
         <!-- Menupunkter -->
-        <a id="navbar-menupunkt-1" href="maeltidskasser.html">MÅLTIDSKASSER</a>
-        <a id="navbar-menupunkt-2" href="udforsk-kredsloeb.html">UDFORSK NIPPON</a>
+
+        <p id="navbar-styling-element" href="#">asd</p>
+        <a id="navbar-link1" href="maeltidskasser.html">MÅLTIDSKASSER</a>
+        <a id="navbar-link2" href="#">UDFORSK NIPPON</a>
+            <ul class="dropdown-content"> 
+                <li><a href="kontakt.html">Kontakt os</a></li>
+                <li><a href="udforsk-kokke.html">Hjernerne bag Nippon</a></li>
+                <li><a href="udforsk-kredsloeb.html">Vores kredsløb</a></li>
+            </ul>
+
+        <a id="navbar-link3" href="favoritter.html"><span class="material-symbols-outlined">shopping_cart</span></a>
 
     </header>
-    
-<!-- navbar slut -->
+
+    <!-- OBS!!! Der er JS i nav baren -->
+    <script src="js/script.js"></script>
+
+<!-- Navbar SLUT -->
+
 
 <main>
 
@@ -49,9 +62,9 @@
 
     <h1>Vil du have indsigt i Nippons kredsløb?</h1>
 
-    <p>Vi ønsker at støtte hjernerne bag vores opskrifter og det lokalsamfund de lever i. Vi sørger derfor altid for at vores krydderier og lokale ingredienser bliver betalt.</p>
+    <h2>Vi ønsker at støtte hjernerne bag vores opskrifter og det lokalsamfund de lever i. Vi sørger derfor altid for at vores krydderier og lokale ingredienser bliver betalt.</h2>
 
-    <img src="" alt="Nippons kredsløb">
+    <img class="infog" src="img/illustrationer/infographic.png" alt="Nippons kredsløb">
 
 </article>
 
