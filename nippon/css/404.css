@@ -22,6 +22,7 @@ main {
   grid-template-rows: repeat(4, 1fr);
 }
 
+
 #navbar-logo{
   width: 9.5rem;
   grid-column-start: 3;
@@ -111,10 +112,13 @@ display: block; /*viser dropdown ved hover */
   grid-column: 3 / span 2;
   align-self: start;
   justify-self: center;
-  grid-row-start: 5;
+  grid-row-start:4;
 }
 
 .dropdown-content {
+  position: absolute;
+  top: 20em;
+  right: 31em;
   z-index: 1000;
   list-style-type: none;
 }
@@ -127,7 +131,7 @@ display: block; /*viser dropdown ved hover */
 .dropdown-content li a {
   text-align: center;
   color: #0000FF;
-  
+
   display: block;
   padding: 10px;
   font-size: 0.75em;
@@ -136,8 +140,6 @@ display: block; /*viser dropdown ved hover */
  .dropdown-content li a:hover {
   color: #4C3B3B;
  }
-
-
 
  /* Styler så den ikke ændre farver efter klik */
 
@@ -152,6 +154,10 @@ display: block; /*viser dropdown ved hover */
 
 
 /* Styling navbar slut */
+
+
+
+
 
 /* Styling af main  */
 main{
