@@ -1,0 +1,20 @@
+/* Generel CSS for hele siden */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sulphur Point", sans-serif;
+    color: #4C3B3B;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(245, 238, 228, 0.5);
+}
+
+.favoritter {
+    
+}
+
