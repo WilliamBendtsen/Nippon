@@ -224,14 +224,31 @@ body{
     color: #0000FF ;
  }
 
- /* Mix din egen ramen bowl */
+ /* Styling af ramen */
  .ramen{
     background-color: rgba(245, 238, 228, 1);
     width: 95%;
-    height: 15rem;
+    height: 16rem;
     margin-top: 2rem;
     justify-self: center;
+    display: grid;
  }
+
+ .ramen p {
+    text-align: center;
+    font-size: larger;
+ }
+
+ .ramen img {
+    width: 9rem;
+    margin: 1rem 5rem;
+ }
+
+ .ramen-billeder {
+    text-align: center;
+ }
+ 
+ 
 
  /* Styling af footer */
  /* Styling af billede i footer */
