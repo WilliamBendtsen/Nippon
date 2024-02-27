@@ -15,7 +15,9 @@ main {
     text-align: center;
   }
 
-/* Styling Navbar */
+
+
+/* Styling Navbar START */
 .navbar{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -153,7 +155,7 @@ display: block; /*viser dropdown ved hover */
 }
 
 
-/* Styling navbar slut */
+/* Styling navbar SLUT */
 
 
 
@@ -213,8 +215,10 @@ main a {
   align-self: center;
   }
 
-   /* Styling af footer */
-   /* Styling af billede i footer */
+
+
+/* Styling af footer */
+/* Styling af billede i footer */
 .footer img {
   width: 100%;
   transform: rotate(180deg);
