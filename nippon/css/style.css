@@ -23,7 +23,7 @@ body{
 }
 
 #hero-logo{
-    width: 9rem;
+    width: 9.5rem;
     grid-column-start: 3;
     justify-self: center;
     grid-row-start: 1;
@@ -133,6 +133,10 @@ body{
     align-items: center;
     background-color: rgba(245, 238, 228, 1);
     color: white;
+}
+
+.navbar {
+    position: sticky;
 }
 
 .brand-title img{
