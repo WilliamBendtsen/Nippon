@@ -25,6 +25,13 @@
         font-weight: 100;
     }
 
+    .kontakt a {
+      margin-left: 14.5%;
+      color: #0000FF;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
     p {
         color: #0000FF;
         margin-top: 3%;
@@ -53,8 +60,26 @@
    /* kontakt-banner */
    .banner1 {
     background-color: white;
-    margin : 14%;
+    margin: 3rem 14.4%;
     color: #4C3B3B;
+   }
+
+   .faq {
+      display: flex;
+      align-items: center;
+      padding: 3rem 2rem;
+   }
+
+   .bannertekst {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .mail {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      padding: 3rem 2rem;
    }
 
    a {
@@ -62,18 +87,28 @@
     text-decoration: underline;
    }
 
+   .banner1 hr {
+      margin: 0 1rem;
+   }
+
 
    /* faqbanner */
    .faq-img {
     width: 10%;
+    margin: 0 2rem;
    }
 
    /* mailbanner */
    .mail-img {
     width: 10%;
+    margin: 0 2rem;
    }
  
  /* Styling af footer */
+ .footer img {
+   width: 100%;
+   transform: rotate(180deg);
+}
  .footer {
     display: flex;
     flex-direction: column;
