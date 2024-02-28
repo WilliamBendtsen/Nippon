@@ -50,7 +50,9 @@ body{
   
   #navbar-styling-element{
     grid-column: 1 / span 5;
-    grid-row-start: 4;
+    grid-row: 4;
+    align-self: center;
+    height: 100%;
     color: rgba(245, 238, 228, 1);
   }
   
@@ -258,6 +260,7 @@ main{
     justify-self: center;
     padding-bottom: 4.2rem;
     cursor: pointer;
+    color: #0000FF;
 }
 
 
