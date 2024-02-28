@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (hourNow >= 15) {
           greeting = "Godeftermiddag - こんにちは";
         } else if (hourNow >= 11) {
-          greeting = "Godmiddag - 良い夕食";
+          greeting = "Goddag - 良い夕食";
       } else if (hourNow >= 5) {
           greeting = "Godmorgen - おはよう";
       } else if (hourNow >= 0) {
