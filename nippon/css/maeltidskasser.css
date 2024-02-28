@@ -218,10 +218,6 @@ main{
     color: #4b3b3a;
 }
 
-/* :modal ul a:hover{
-    text-decoration: underline;
-} */
-
 :modal ul li a.hovered,
 :modal ul li a.clicked {
     text-decoration: underline;
@@ -231,34 +227,340 @@ main{
     cursor: pointer;
 }
 
+#bestil-tekst{
+    grid-column: 7 / span 3;
+    grid-row: 1;
+    padding-top: .7rem;
+}
+
+#pris{
+    font-size: 3rem;
+}
+
+#bestil-knap{
+    grid-column: 9;
+    grid-row: 1;
+    height: 3rem;
+    width: 5.5rem;
+    font-size: 2rem;
+    justify-self: center;
+    font-weight: lighter;
+    border: none;
+    margin-top: 1.7rem;
+    margin-right: -12rem;
+}
+
 /* Styling af oplevelsespakke containere */
 #om-kassen,
 #indhold,
 #kokken-bag,
 #faq{
-    display: flex;
+    display: grid;
     grid-column: 1 / span 10;
     grid-row: 2 / span 5;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: -3rem;
 }
 
-#om-kassen img,
-#indhold img,
-#kokken-bag img,
-#faq img{
-    width: 100%;
-    height: calc(100% - -4rem);
-    object-fit: cover;
-    object-position: top;
-    margin-top: -4rem;
-    overflow: hidden;
-    filter: brightness(75%);
-    z-index: 0;
+#indhold-aside,
+#kokken-bag-aside,
+#faq-aside{
+    display: none;
 }
 
-#om-kassen-tekst{
-    
+/* Seperat styling af "Om Kassen" */
+#om-kassen-aside{
+    width: 23rem;
+    height: 41rem;
+    background-color: white;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
+#om-kassen-aside h3{
+    grid-column: 1 / span 3;
+    justify-self: center;
+}
+
+#om-kassen-horizontal-line{
+    border-top: 1px solid;
+    grid-row-start: 2;
+    grid-column: 1 / span 3;
+    justify-self: center;
+    width: calc((100% / 10) * 7);
+}
+
+#person-ikon{
+    font-size: 2.5rem;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#person-tekst{
+    font-size: 1rem;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    justify-self: center;
+    align-self: end;
+}
+
+#alarm-ikon{
+    font-size: 2.5rem;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#alarm-tekst{
+    font-size: 1rem;
+    text-align: center;
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    justify-self: center;
+    align-self: end;
+}
+
+#om-kassen-beskrivelse{
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 3;
+    padding-left: 1rem;
+    line-height: 1.2rem;
+}
+
+#om-kassen-bestil{
+    grid-column: 1 / span 3;
+    grid-row: 7 / span 2;
+    padding-left: 1rem;
+    line-height: 1.2rem;
+}
+
+#om-kassen-aside img{
+    width: 75%;
+    grid-row: 9 / span 2;
+    justify-self: center;
+    align-self: end;
+}
+
+/* Seperat styling af "Indhold" */
+#indhold-aside{
+    width: 23rem;
+    height: 41rem;
+    background-color: white;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+#raavarer-h3{
+    grid-row: 1;
+    grid-column: 1;
+    align-self: start;
+    padding-left: 1rem;
+}
+
+#raavarer-ul{
+    display: block;
+    grid-row: 2 / span 5;
+    list-style: circle;
+    grid-column: 1 / span 3;
+    justify-self: center;
+}
+
+#redskaber-h3{
+    grid-row: 7;
+    grid-column: 1;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+#redskaber-ul{
+    display: block;
+    grid-row: 7 / span 2;
+    list-style: circle;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    padding-top: 3rem;
+}
+
+#drikkevarer-h3{
+    grid-row: 9;
+    grid-column: 1;
+    padding-left: 1rem;
+}
+
+#drikkevarer-ul{
+    display: block;
+    grid-row: 9 / span 2;
+    list-style: circle;
+    grid-column: 1 / span 3;
+    justify-self: center;
+}
+
+
+/* Seperat styling af "Kokken Bag" */
+#kokken-bag-aside{
+    width: 23rem;
+    height: 41rem;
+    background-color: white;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+#kokken-bag h3{
+    grid-column: 1 / span 3;
+    justify-self: center;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+#facts{
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+}
+
+#kokken-bag ul{
+    grid-row: 2 / span 3;
+    align-self: center;
+    display: block;
+    list-style: circle;
+    padding-left: 4rem;
+}
+
+#titel{
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: calc((100% / 10) * 6.5);
+}
+
+#udtalelse-1{
+    grid-row: 5 / span 3;
+    grid-column: 1 / span 3;
+    justify-self: center;
+    padding-top: 2.5rem;
+    max-width: 18rem;
+}
+
+#udtalelse-2{
+    grid-row: 7 / span 2;
+    grid-column: 1 / span 3;
+    justify-self: center;
+    padding-top: 2rem;
+}
+
+
+/* Seperat styling af "FAQ" */
+#faq-aside{
+    width: 23rem;
+    height: 41rem;
+    background-color: white;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#spoergsmaal-1{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    padding-left: .5rem;
+}
+
+#svar-1{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    list-style: circle;
+    padding-top: 1.6rem;
+    padding-left: 1.5rem;
+}
+
+#spoergsmaal-2{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    padding-left: .5rem;
+}
+
+#svar-2{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    list-style: circle;
+    padding-left: 1.5rem;
+}
+
+#spoergsmaal-3{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    padding-left: .5rem;
+}
+
+#svar-3{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    list-style: circle;
+    padding-left: 1.5rem;
+}
+
+#spoergsmaal-4{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    padding-left: .5rem;
+}
+
+#svar-4{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    list-style: circle;
+    padding-left: 1.5rem;
+}
+
+#spoergsmaal-5{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    padding-left: .5rem;
+}
+
+#svar-5{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    list-style: circle;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+#spoergsmaal-6{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    padding-left: .5rem;
+}
+
+#svar-6{
+    font-size: .8rem;
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    list-style: circle;
+    padding-left: 1.5rem;
+}
 
 
 
