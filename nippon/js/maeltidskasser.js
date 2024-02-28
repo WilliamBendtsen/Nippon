@@ -107,6 +107,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Javascript så bestil knappen henviser til bestil.html
 
-function redirectToKurv() {
-    window.location.href = "kurv.html";
+function redirectToBestil() {
+    window.location.href = "bestil.html";
 }
