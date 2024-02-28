@@ -177,6 +177,7 @@ main{
     justify-self: center;
 }
 
+/* Styling af pop-up */
 :modal{
     width: 70rem;
     height: auto;
@@ -194,17 +195,72 @@ main{
 :modal h2{
     grid-row: 1;
     grid-column: 1 / span 4;
-    align-self: end;
+    align-self: start;
     font-size: 2rem;
 }
 
-:modal a{
+:modal ul{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    align-self: center;
+    display: flex;
+    justify-self: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+:modal ul li{
+    margin-right: 2rem;
+}
+
+.popup-link{
+    color: #4b3b3a;
+}
+
+/* :modal ul a:hover{
+    text-decoration: underline;
+} */
+
+:modal ul li a.hovered,
+:modal ul li a.clicked {
+    text-decoration: underline;
 }
 
 #oplevelsespakke-kryds{
     cursor: pointer;
 }
+
+/* Styling af oplevelsespakke containere */
+#om-kassen,
+#indhold,
+#kokken-bag,
+#faq{
+    display: flex;
+    grid-column: 1 / span 10;
+    grid-row: 2 / span 5;
+}
+
+#om-kassen img,
+#indhold img,
+#kokken-bag img,
+#faq img{
+    width: 100%;
+    height: calc(100% - -4rem);
+    object-fit: cover;
+    object-position: top;
+    margin-top: -4rem;
+    overflow: hidden;
+    filter: brightness(75%);
+    z-index: 0;
+}
+
+#om-kassen-tekst{
+    
+}
+
+
+
 
 #hverdagspakke{
     display: flex;
