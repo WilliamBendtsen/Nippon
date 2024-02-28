@@ -1,30 +1,58 @@
 "use strict"
-document.addEventListener("DOMContentLoaded", function() {
-    var scrollDownLinks = document.querySelectorAll('#hero-pil');
-    scrollDownLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            var targetId = this.getAttribute('href');
-            var targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-});
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to update greeting
+  function updateGreeting() {
+      let today = new Date();
+      let hourNow = today.getHours();
+      let greeting;
 
+      if (hourNow >= 18) {
+          greeting = "Godaften - こんばんは";
+      } else if (hourNow >= 15) {
+          greeting = "God eftermiddag - こんにちは";
+        } else if (hourNow >= 11) {
+          greeting = "God middag - 良い夕食";
+      } else if (hourNow >= 5) {
+          greeting = "Godmorgen - おはよう";
+      } else if (hourNow >= 0) {
+          greeting = "Godnat - おやすみ ";
+      } else {
+          greeting = "Velkommen - こんにちは ";
+      }
 
+      let greetingMessageElement = document.getElementById("greetingMessage");
 
-// VIGTIGT til nav bar dropw down menu! 
+      if (greetingMessageElement) {
+          greetingMessageElement.textContent = greeting;
+      }
 
-// Get the navbar link and dropdown content elements
+      // Schedule the next update after 1 minute
+      setTimeout(updateGreeting, 60000); // 60000 milliseconds = 1 minute
+  }
 
-const navbarLink = document.querySelector('#navbar-link2');
-const dropdownContent = document.querySelector('.dropdown-content');
+  // Initial call to start the update loop
+  updateGreeting();
 
-// Add event listeners to the navbar link and dropdown content
-navbarLink.addEventListener('mouseover', () => {
-  dropdownContent.style.display = 'block'; // Show dropdown content
-});
+  // Smooth scrolling for anchor links
+  var scrollDownLinks = document.querySelectorAll('#hero-pil');
+  scrollDownLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+          var targetId = this.getAttribute('href');
+          var targetElement = document.querySelector(targetId);
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+      });
+  });
 
-dropdownContent.addEventListener('mouseleave', () => {
-  dropdownContent.style.display = 'none'; // Hide dropdown content when the mouse leaves
+  // Important for the navbar dropdown menu!
+  const navbarLink = document.querySelector('#navbar-link2');
+  const dropdownContent = document.querySelector('.dropdown-content');
+
+  navbarLink.addEventListener('mouseover', () => {
+      dropdownContent.style.display = 'block'; // Show dropdown content
+  });
+
+  dropdownContent.addEventListener('mouseleave', () => {
+      dropdownContent.style.display = 'none'; // Hide dropdown content when the mouse leaves
+  });
 });
