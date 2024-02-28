@@ -1,28 +1,26 @@
 "use strict";
 
+// Declare modal and modalLinks variables in the global scope
 const modal = document.querySelector('#oplevelsespakke-modal');
 const openModal = document.querySelector('#oplevelsespakke-laes-mere');
 const closeModal = document.querySelector('#oplevelsespakke-kryds');
+let modalLinks;
 
 openModal.addEventListener('click', () => {
     modal.showModal();
     
-    // Hide all images initially
-    const images = modal.querySelectorAll('section img');
-    images.forEach(img => {
-        img.style.display = 'none';
+    // Hide all sections except the first one initially
+    const sections = modal.querySelectorAll('section');
+    sections.forEach((section, index) => {
+        if (index !== 0) {
+            section.style.display = 'none';
+        }
     });
 
     // Show the first section initially
-    const firstSection = modal.querySelector('section');
+    const firstSection = sections[0];
     if (firstSection) {
         firstSection.style.display = 'block';
-
-        // Show the image of the first section
-        const firstImage = firstSection.querySelector('img');
-        if (firstImage) {
-            firstImage.style.display = 'block';
-        }
     }
 
     // Underline the first <li>
@@ -37,7 +35,7 @@ closeModal.addEventListener('click', () => {
 });
 
 // Get all the <a> elements in the modal
-const modalLinks = modal.querySelectorAll('a.popup-link');
+modalLinks = modal.querySelectorAll('a.popup-link');
 
 // Add event listeners to each <a> element
 modalLinks.forEach(link => {
@@ -61,64 +59,48 @@ modalLinks.forEach(link => {
         });
 
         // Get the ID of the corresponding section based on the clicked link
-const sectionId = link.getAttribute('href').substring(1);
-const section = document.getElementById(sectionId);
-if (section) {
-    section.style.display = 'block'; // Show the corresponding section
+        const sectionId = link.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.style.display = 'block'; // Show the corresponding section
+        }
 
-    // Show the image of the corresponding section
-    const image = section.querySelector('img');
-    if (image) {
-        image.style.display = 'block';
-    }
-
-    // Show the aside of the corresponding section
-    const aside = section.querySelector('aside');
-    if (aside) {
-        aside.style.display = 'block'; // Or 'flex' depending on your styling
-    }
-}
-
-        // Show the modal
-        modal.showModal();
+        // Show the corresponding aside
+        const correspondingAside = document.getElementById(sectionId + '-aside');
+        if (correspondingAside) {
+            correspondingAside.style.display = 'grid';
+        }
     });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
     // Get all the popup links
-    var popupLinks = document.querySelectorAll('.popup-link');
+    const popupLinks = document.querySelectorAll('.popup-link');
 
-    // Add click event listener to each popup link
     popupLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
-            // Prevent default link behavior
             event.preventDefault();
-
-            // Hide all asides
-            var asides = document.querySelectorAll('dialog aside');
-            asides.forEach(function(aside) {
-                aside.style.display = 'none';
-            });
-
-            // Get the target section ID from the href attribute
-            var targetId = link.getAttribute('href').substring(1);
-
-            // Show the corresponding aside
-            var correspondingAside = document.getElementById(targetId);
+    
+            const targetId = link.getAttribute('href').substring(1);
+            const correspondingAside = document.getElementById(targetId + '-aside');
             if (correspondingAside) {
-                correspondingAside.style.display = 'block';
+                const asides = document.querySelectorAll('dialog aside');
+                asides.forEach(function(aside) {
+                    if (aside !== correspondingAside) {
+                        aside.style.display = 'none';
+                    }
+                });
             }
-
-            // Show the modal
-            var modal = document.getElementById('oplevelsespakke-modal');
+    
+            const modal = document.getElementById('oplevelsespakke-modal');
             modal.showModal();
         });
     });
 
     // Add click event listener to the close button
-    var closeButton = document.getElementById('oplevelsespakke-kryds');
+    const closeButton = document.getElementById('oplevelsespakke-kryds');
     closeButton.addEventListener('click', function() {
-        var modal = document.getElementById('oplevelsespakke-modal');
+        const modal = document.getElementById('oplevelsespakke-modal');
         modal.close();
     });
 });
