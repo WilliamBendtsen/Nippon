@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (hourNow >= 18) {
           greeting = "Godaften - こんばんは";
       } else if (hourNow >= 15) {
-          greeting = "God eftermiddag - こんにちは";
+          greeting = "Godeftermiddag - こんにちは";
         } else if (hourNow >= 11) {
-          greeting = "God middag - 良い夕食";
+          greeting = "Godmiddag - 良い夕食";
       } else if (hourNow >= 5) {
           greeting = "Godmorgen - おはよう";
       } else if (hourNow >= 0) {
