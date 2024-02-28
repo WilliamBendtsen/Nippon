@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Link til font awesome iconer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/illustrationer/nippon-logo-2.webp">
     <link rel="stylesheet" href="css/bestil.css">
 </head>
 
@@ -53,11 +55,15 @@
 <main>
 <section class="bestil">
 <div class="bestil-kasse">
-<br>
-<h1>Tilbage til oplevelseskassen</h1>
-<br>
-<hr>
-<br>
+    <br>
+    <div class="arrow-container">
+      <a href="maeltidskasser.html"><span class="arrow left-arrow"></span></a>
+      <h1>Tilbage til oplevelseskassen</h1>
+    </div>
+    <br>
+    <hr>
+    <br>
+    
 
 
 <!-- personer -->
@@ -108,17 +114,16 @@
 <p>Pris 55kr</p>
     </label>
 </div>
+<br>
 <a href="#">Se mere</a>
 </section>
 
 <!-- bestil -->
-<section class="Bestil">
+<section class="næste-section">
     <img src="img/illustrationer/oplevelse-kasse.png" class="oplevelses-kasse">
-<div class="1text">
-<p>Pris for 2 personer, fra</p> <h3>549</h3>
-</div>
-<p>Gratis fragt til alle medlemmer</p>
-<a href="kurv.html"><button class="næste">Næste</button></a>
+<div class="text1">
+    <p id="bestil-tekst">Pris for 2 personer, fra <span id="pris">549kr.</span> <br> Gratis fragt til alle medlemmer</p>
+    <a href="kurv.html"><button id="bestil-knap">Næste</button></a>
 </div>
 </section>
 

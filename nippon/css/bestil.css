@@ -159,14 +159,32 @@
   }
 
   .bestil-kasse {
-    margin: 3rem;
+    margin: 3.5rem;
   }
 
+
+/* Container til at indeholde pilen og overskriften */
+.arrow-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.arrow-container:hover {
+  color: #948585;
+}
+
+/* En tynd pil til venstre */
+.left-arrow::before {
+  content: '\2190'; /* Unicode-pil til venstre */
+  font-size: 3rem; /* Juster størrelsen efter behov */
+  color: #4C3B3B; /* Juster farven efter dine præferencer */
+  margin-top: -8%;
+} 
 
   /* overskrifter */
 h1 {
     font-size: 2.5rem;
-    margin-top: 3%;
   }
 
 h2 {
@@ -251,6 +269,32 @@ p {
   width: 30%;
   margin-top: 3%;
   margin-left: 4%;
+}
+
+/* næste bestil til kurv */
+
+
+.text1 {
+  margin-left: 60%;
+  margin-top: -2%;
+  display: flex;
+}
+
+#pris{
+  font-size: 3rem;
+}
+
+#bestil-tekst{
+  font-size: 1rem;
+  margin-bottom: 20%;
+}
+
+#bestil-knap{
+  height: 3rem;
+  width: 7rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  border: none;
 }
 
   /* Styling af footer */
