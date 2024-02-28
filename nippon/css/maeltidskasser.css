@@ -218,10 +218,6 @@ main{
     color: #4b3b3a;
 }
 
-/* :modal ul a:hover{
-    text-decoration: underline;
-} */
-
 :modal ul li a.hovered,
 :modal ul li a.clicked {
     text-decoration: underline;
@@ -229,6 +225,29 @@ main{
 
 #oplevelsespakke-kryds{
     cursor: pointer;
+}
+
+#bestil-tekst{
+    grid-column: 7 / span 3;
+    grid-row: 1;
+    padding-top: .7rem;
+}
+
+#pris{
+    font-size: 3rem;
+}
+
+#bestil-knap{
+    grid-column: 9;
+    grid-row: 1;
+    height: 3rem;
+    width: 5.5rem;
+    font-size: 2rem;
+    justify-self: center;
+    font-weight: lighter;
+    border: none;
+    margin-top: 1.7rem;
+    margin-right: -12rem;
 }
 
 /* Styling af oplevelsespakke containere */

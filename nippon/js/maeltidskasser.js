@@ -104,3 +104,9 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.close();
     });
 });
+
+// Javascript så bestil knappen henviser til bestil.html
+
+function redirectToKurv() {
+    window.location.href = "kurv.html";
+}
