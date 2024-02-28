@@ -240,11 +240,17 @@ p {
 }
 
 /* link */
-a {
+.tilføj a {
     color: #4C3B3B;
     text-decoration: underline;
     font-size: 1rem;
-    margin-top: 5%;
+    margin: 36%;
+}
+
+.oplevelses-kasse {
+  width: 30%;
+  margin-top: 3%;
+  margin-left: 4%;
 }
 
   /* Styling af footer */
