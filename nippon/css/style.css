@@ -255,8 +255,9 @@ body{
     color: #0000FF;
     justify-self: center;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.7rem;
     font-weight: lighter;
+    margin-top: 10%;
 }
 
 /* Knap på midten af siden */
@@ -266,7 +267,7 @@ body{
     border-radius: 100px;
     border-color: #FEDBFA;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     padding: .5rem 0;
     background-color: rgba(245, 238, 228, 1);
@@ -275,6 +276,7 @@ body{
     text-align: center;
     border: none;
     color: #0000FF ;
+    margin-bottom: 7%;
  }
 
  /* Styling af ramen */
@@ -282,14 +284,14 @@ body{
     background-color: rgba(245, 238, 228, 1);
     width: 95%;
     height: 16rem;
-    margin-top: 2rem;
+    margin-top: 7%;
     justify-self: center;
     display: grid;
  }
 
  .ramen p {
     text-align: center;
-    font-size: larger;
+    font-size: 1.5rem;
  }
 
  .ramen img {
@@ -304,8 +306,10 @@ body{
  /* styling af Somesection */
  .some {
     margin-top: 5rem;
-    width: 95%;
+    width: 100%;
     display: flex;
+    background-color: #F5EEE4;
+    margin-bottom: 7%;
 }
 
  /* text */
