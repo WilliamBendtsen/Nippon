@@ -11,11 +11,6 @@
       height: 100vh;
     }
     
-  main {
-      text-align: center;
-    }
-  
-  
   
   /* Styling Navbar START */
   .navbar{
@@ -157,7 +152,101 @@
   
   /* Styling navbar SLUT */
   
-  
+  /* styling af main */
+  .bestil {
+    background-color: white;
+    margin: 10%;
+  }
+
+  .bestil-kasse {
+    margin: 3rem;
+  }
+
+
+  /* overskrifter */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 3%;
+  }
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* personer */
+.personer {
+    margin-top: 5%;
+}
+
+.btn {
+    margin-top: 2%;
+    width: 4%;
+    color: #4C3B3B;
+    border-color:#F5EEE4;
+    font-size: larger;
+    margin-left: 1%;
+}
+
+.btn:hover {
+    color: #847e77;
+    cursor: pointer;
+}
+
+/* forbehold */
+.forbehold {
+    margin-top: 7%;
+}
+
+#skriv {
+    margin-top: 2%;
+    color: #4C3B3B;
+    background-color: #F5EEE4;
+    border-color: #F5EEE4;
+    border-style: none;
+    width: 41.5%;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+/* tilføj */
+.checkbox-container {
+    margin-top: 5%;
+    display: flex;
+    background-color: #F5EEE4;
+    width: 41.5%;
+}
+
+ h2 {
+    margin-top: 7%;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+
+#minCheckbox {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.checkbox-text {
+    margin: 2%;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+/* link */
+a {
+    color: #4C3B3B;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+
   /* Styling af footer */
 /* Styling af billede i footer */
 .footer img {
