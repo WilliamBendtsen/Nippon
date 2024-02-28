@@ -105,8 +105,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Javascript så bestil knappen henviser til bestil.html
+// Javascript så bestil- og favoritknapperne henviser til henholdsvis bestil.html og favoritter.html
 
 function redirectToBestil() {
     window.location.href = "bestil.html";
+}
+
+function redirectToFavoritter() {
+    window.location.href = "favoritter.html"
 }
