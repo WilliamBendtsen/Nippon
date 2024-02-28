@@ -184,6 +184,7 @@ main{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    border: none;
 }
 
 :modal i{
@@ -250,6 +251,16 @@ main{
     margin-right: -12rem;
 }
 
+#favoritter-hjerte{
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 3.5rem;
+    cursor: pointer;
+}
+
+
 /* Styling af oplevelsespakke containere */
 #om-kassen,
 #indhold,
@@ -290,7 +301,7 @@ main{
     grid-row-start: 2;
     grid-column: 1 / span 3;
     justify-self: center;
-    width: calc((100% / 10) * 7);
+    width: calc((100% / 10) * 8);
 }
 
 #person-ikon{
