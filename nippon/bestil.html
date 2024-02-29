@@ -21,7 +21,7 @@
      <header class="navbar">
 
         <!-- Logo -->
-            <a id="navbar-logo" href="index.html"><img id="navbar-logo" src="img/illustrationer/logo.navbar.png" alt="Nippon Logo Main"></a>
+            <a id="navbar-logo" href="index.html"><img id="navbar-logo1" src="img/illustrationer/logo.navbar.png" alt="Nippon Logo Main"></a>
 
             <!-- Navbar ikoner -->
             <div class="navbar-icons">
@@ -36,9 +36,11 @@
 
             <!-- Menupunkter -->
     
-            <p id="navbar-styling-element" href="#">asd</p>
+            <section id="navbar-styling-element">
+                <a href="#"></a>
+            </section>
             <a id="navbar-link1" href="maeltidskasser.html">MÅLTIDSKASSER</a>
-            <a id="navbar-link2" href="#">UDFORSK NIPPON</a>
+            <a id="navbar-link2" href="udforsk-kokke.html">UDFORSK NIPPON</a>
                 <ul class="dropdown-content"> 
                     <li><a href="kontakt.html">Kontakt os</a></li>
                     <li><a href="udforsk-kokke.html">Hjernerne bag Nippon</a></li>
@@ -60,6 +62,8 @@
       <a href="maeltidskasser.html"><span class="arrow left-arrow"></span></a>
       <h1>Tilbage til oplevelseskassen</h1>
     </div>
+</div>
+
     <br>
     <hr>
     <br>
@@ -81,7 +85,7 @@
 <!-- forbehold -->
 <div class="forbehold">
 <h2>Har du nogen forbehold, som vi skal tage hensyn til?</h2>
-<input type="Skriv" id="skriv" placeholder="Skriv her " required>
+<input id="skriv" placeholder="Skriv her " required>
 </div>
 
 <!-- tilføj -->
@@ -90,40 +94,45 @@
 <section class="tilføj">
 <div class="checkbox-container">
     <input type="checkbox" id="minCheckbox">
-    <label for="minCheckbox" class="checkbox-text">
-<h3>+ Dehydreret tang</h3> 
-<p>Tang til 4-6 personer</p>
-<p>Pris 80kr</p>
-    </label>
+    <label for="minCheckbox" class="checkbox-text"></label>
+        <div class="checkbox-container-tekst">
+            <h3>+ Dehydreret tang</h3> 
+            <p>Tang til 4-6 personer</p>
+            <p>Pris 80kr</p>
+        </div>
 </div>
 
 <div class="checkbox-container">
-    <input type="checkbox" id="minCheckbox">
-    <label for="minCheckbox" class="checkbox-text">
-<h3>+ Crispychili olie, lavet på hjemmedyrket chillier</h3> 
-<p>1 glas, 250ml</p>
-<p>Pris 45kr</p>
-    </label>
+    <input type="checkbox" id="minCheckbox1">
+    <label for="minCheckbox" class="checkbox-text"></label>
+        <div class="checkbox-container-tekst">
+            <h3>+ Crispychili olie, lavet på hjemmedyrket chillier</h3> 
+            <p>1 glas, 250ml</p>
+            <p>Pris 45kr</p>
+        </div>
 </div>
 
 <div class="checkbox-container">
-    <input type="checkbox" id="minCheckbox">
-    <label for="minCheckbox" class="checkbox-text">
-<h3>+ Ekstra spisepinde</h3> 
-<p>2 stk</p>
-<p>Pris 55kr</p>
-    </label>
+    <input type="checkbox" id="minCheckbox2">
+    <label for="minCheckbox" class="checkbox-text"></label>
+        <div class="checkbox-container-tekst">
+            <h3>+ Ekstra spisepinde</h3> 
+            <p>2 stk</p>
+            <p>Pris 55kr</p>
+        </div>
+    
 </div>
+
 <br>
 <a href="#">Se mere</a>
 </section>
 
 <!-- bestil -->
 <section class="næste-section">
-    <img src="img/illustrationer/oplevelse-kasse.png" class="oplevelses-kasse">
+    <img src="img/illustrationer/oplevelse-kasse.png" class="oplevelses-kasse" alt="En illustration over oplevelseskassen">
 <div class="text1">
     <p id="bestil-tekst">Pris for 2 personer, fra <span id="pris">549kr.</span> <br> Gratis fragt til alle medlemmer</p>
-    <a href="kurv.html"><button id="bestil-knap">Næste</button></a>
+    <a href="kurv.html" id="bestil-knap">Næste</a>
 </div>
 </section>
 
