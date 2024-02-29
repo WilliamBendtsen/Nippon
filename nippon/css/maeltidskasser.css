@@ -29,6 +29,7 @@ body{
     grid-row-end: span 2;
     align-self: center;
     padding-top: 3%; 
+    cursor: pointer;
   }
   
   #navbar-waves{
@@ -179,6 +180,8 @@ main{
     justify-self: center;
 }
 
+
+
 /* Styling af pop-up */
 :modal{
     width: 70rem;
@@ -262,7 +265,6 @@ main{
     cursor: pointer;
     color: #0000FF;
 }
-
 
 /* Styling af oplevelsespakke containere */
 #om-kassen,

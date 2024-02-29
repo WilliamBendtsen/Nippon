@@ -31,6 +31,7 @@ body{
     grid-row-end: span 2;
     align-self: center;
     padding-top: 3%; 
+    cursor: pointer;
   }
   
   #navbar-waves{
@@ -182,7 +183,7 @@ body{
 }
 
 #nobu-navn{
-    color: #AFAFFF;
+    color: #ff0000;
     font-size: 2rem;
     font-weight: lighter;
     grid-row-start: 2;
@@ -241,7 +242,7 @@ body{
 
 /* Portræt af Yoshiko Hattori */
 #yoshiko-navn{
-    color: #AFAFFF;
+    color: #ff0000;
     font-size: 2rem;
     font-weight: lighter;
     grid-row-start: 6;
