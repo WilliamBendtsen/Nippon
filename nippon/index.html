@@ -27,7 +27,7 @@
     <header class="hero">
 
         <!-- Logo -->
-            <a id="hero-logo" href="index.html"><img id="hero-logo" src="img/illustrationer/logo.navbar.png" alt="Nippon Logo Main"></a>
+            <img id="hero-logo" src="img/illustrationer/logo.navbar.png" alt="Nippon Logo Main" onclick="redirectToIndex()">
 
             <!-- Navbar ikoner -->
             <div class="hero-icons">
@@ -50,12 +50,12 @@
             <img id="hero-billede" src="img/fotos/hero-billede.png" alt="Nippon Velkomst">
             
             <!-- Velkomstskrift der skifter baseret på tidspunkt på dag -->
-            <h1 id="greetingMessage"></h1>
+            <h1 id="greetingMessage">goddag</h1>
 
             <p>Nippon forhandler autentiske <br> asiatiske måltidskasser</p>
        
             <!-- Pil der scroller ned til main content -->
-            <a id="hero-pil" href="#navbar"><i class="fa-solid fa-chevron-down" class="shake-vertical"></i></i></a>
+            <a id="hero-pil" href="#navbar"><i class="fa-solid fa-chevron-down"></i></a>
         </header>
 
 
@@ -97,7 +97,7 @@
     <h1>OPLEVELSESPAKKE</h1>
     <h2>med en du holder af...</h2>
     <p>Pakken indeholder opskrift, alle nødvendige råvarer, autentiske ingredienser og redskaber</p>
-    <a href="maeltidskasser.html"><button class="seindhold">Se indhold</button></a>
+    <button class="seindhold" onclick="redirectToMaeltidskasser()">Se indhold</button>
     </div>
 
     </section>

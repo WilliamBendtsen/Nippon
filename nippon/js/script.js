@@ -56,3 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdownContent.style.display = 'none'; // Hide dropdown content when the mouse leaves
   });
 });
+
+function redirectToIndex() {
+    window.location.href = "index.html"
+}
+
+function redirectToMaeltidskasser() {
+    window.location.href = "maeltidskasser.html"
+}
