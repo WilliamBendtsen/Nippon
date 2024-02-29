@@ -30,6 +30,7 @@ body{
     grid-row-end: span 2;
     align-self: center;
     padding-top: 3%;
+    cursor: pointer;
 }
 
 #hero-waves-1{
@@ -253,6 +254,7 @@ body{
 /* Tekst på midten af siden */
 .middle-text{
     color: #0000FF;
+    font-weight:lighter;
     justify-self: center;
     text-align: center;
     font-size: 2.7rem;
@@ -314,13 +316,15 @@ body{
 
  /* text */
  .text-container h1 {
-color: #0000FF;
+color: #ff0000;
+font-weight: lighter;
 font-size: 2.5rem;
 margin-bottom: -1%;
  }
 
  .text-container h2 {
-color: #0000FF;
+color: #ff0000;
+font-weight: lighter;
  }
  
  .text-container p{
@@ -357,7 +361,7 @@ margin-right: 12rem;
     line-height: 38px;
     border-radius: 50%;
     padding: 0 15px;
-    color: #0000FF;
+    color: #ff0000;
  }
 
 
