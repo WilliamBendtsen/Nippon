@@ -22,14 +22,15 @@ body{
   }
   
   
-  #navbar-logo, #navbar-logo1 {
+  #navbar-logo{
     width: 9.5rem;
     grid-column-start: 3;
     justify-self: center;
     grid-row-start: 1;
     grid-row-end: span 2;
     align-self: center;
-    padding-top: 3%; 
+    padding-top: 3%;
+    cursor: pointer; 
   }
   
   #navbar-waves{
