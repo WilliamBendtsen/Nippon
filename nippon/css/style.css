@@ -30,6 +30,7 @@ body{
     grid-row-end: span 2;
     align-self: center;
     padding-top: 3%;
+    cursor: pointer;
 }
 
 #hero-waves-1{

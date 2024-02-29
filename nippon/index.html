@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="nippon, asiatisk mad, aftensmad, ramen, måltidskasser, oplevelseskasser, hverdagskasser, ingredienskasser, redskabskasser, oplysninger, oplevelser, japanske retter">
-    <meta name="description" content="Velkommen til Nippon! Vi laver autentisk asiatiske opskrifter og oplevelser, der bliver leveret lige foran din dør. Udforsk vores køkke og lækre opskrifter her på siden. Vi er en måltidskasse til din næste oplevelse i køkkenet."> 
+    <meta name="keywords" content="nippon, asiatisk mad, aftensmad, ramen, måltidskasser, oplevelseskasser, 
+    hverdagskasser, ingredienskasser, redskabskasser, oplysninger, oplevelser, japanske retter">
+    <meta name="description" content="Velkommen til Nippon! Vi laver autentisk asiatiske 
+    opskrifter og oplevelser, der bliver leveret lige foran din dør. 
+    Udforsk vores køkke og lækre opskrifter her på siden. Vi er en måltidskasse til din næste oplevelse i køkkenet."> 
     <title>Nippon forside</title>
  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
@@ -24,7 +27,7 @@
     <header class="hero">
 
         <!-- Logo -->
-            <a id="hero-logo" href="index.html"><img id="hero-logo" src="img/illustrationer/logo.navbar.png" alt="Nippon Logo Main"></a>
+            <img id="hero-logo" src="img/illustrationer/logo.navbar.png" alt="Nippon Logo Main" onclick="redirectToIndex()">
 
             <!-- Navbar ikoner -->
             <div class="hero-icons">
@@ -47,12 +50,12 @@
             <img id="hero-billede" src="img/fotos/hero-billede.png" alt="Nippon Velkomst">
             
             <!-- Velkomstskrift der skifter baseret på tidspunkt på dag -->
-            <h1 id="greetingMessage"></h1>
+            <h1 id="greetingMessage">goddag</h1>
 
             <p>Nippon forhandler autentiske <br> asiatiske måltidskasser</p>
        
             <!-- Pil der scroller ned til main content -->
-            <a id="hero-pil" href="#navbar"><i class="fa-solid fa-chevron-down" class="shake-vertical"></i></i></a>
+            <a id="hero-pil" href="#navbar"><i class="fa-solid fa-chevron-down"></i></a>
         </header>
 
 
@@ -94,7 +97,7 @@
     <h1>OPLEVELSESPAKKE</h1>
     <h2>med en du holder af...</h2>
     <p>Pakken indeholder opskrift, alle nødvendige råvarer, autentiske ingredienser og redskaber</p>
-    <a href="maeltidskasser.html"><button class="seindhold">Se indhold</button></a>
+    <button class="seindhold" onclick="redirectToMaeltidskasser()">Se indhold</button>
     </div>
 
     </section>
@@ -102,11 +105,11 @@
       <!-- ramen section -->
       <section class="ramen">
         <p>Har du testet vores ramen? I denne måneds oplevelseskasse følger vores opskrift på en lækker ramen med</p>
-        <picture class="ramen-billeder">
+        <section class="ramen-billeder">
             <img src="img/illustrationer/ramen-aeg.png" alt="Illustration over ramen" class="ramen1">
             <img src="img/illustrationer/ramen-svampe.png" alt="Illustration over ramen">
             <img src="img/illustrationer/ramen-pakchoi.png" alt="Illustration over ramen">
-        </picture>
+        </section>
     </section>
 
     <!-- midter text -->

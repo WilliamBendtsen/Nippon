@@ -25,7 +25,7 @@ main {
 }
 
 
-#navbar-logo{
+#navbar-logo, #navbar-logo1{
   width: 9.5rem;
   grid-column-start: 3;
   justify-self: center;
