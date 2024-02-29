@@ -20,7 +20,7 @@
   }
   
   
-  #navbar-logo{
+  #navbar-logo, #navbar-logo1 {
     width: 9.5rem;
     grid-column-start: 3;
     justify-self: center;
@@ -156,10 +156,7 @@
   .bestil {
     background-color: white;
     margin: 10%;
-  }
-
-  .bestil-kasse {
-    margin: 3.5rem;
+    padding: 3rem;
   }
 
 
@@ -224,6 +221,7 @@ h2 {
     width: 41.5%;
     height: 2rem;
     font-size: 1rem;
+    padding: 1%;
 }
 
 /* tilføj */
@@ -232,6 +230,7 @@ h2 {
     display: flex;
     background-color: #F5EEE4;
     width: 41.5%;
+    padding: 2%;
 }
 
  h2 {
@@ -240,12 +239,11 @@ h2 {
     font-weight: 300;
 }
 
-#minCheckbox {
-    margin-right: 2%;
-    margin-left: 2%;
+#minCheckbox, #minCheckbox1, #minCheckbox2 {
+    margin: 4%;
 }
 
-.checkbox-text {
+.checkbox-container-text {
     margin: 2%;
 }
 
@@ -290,12 +288,18 @@ p {
 }
 
 #bestil-knap{
-  height: 3rem;
+  height: 2rem;
   width: 7rem;
-  font-size: 2rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
   font-weight: lighter;
+  text-align: center;
   border: none;
+  background-color: #F5EEE4;
+  margin-left: 1rem;
+  color: #4C3B3B;
 }
+
 
   /* Styling af footer */
 /* Styling af billede i footer */
