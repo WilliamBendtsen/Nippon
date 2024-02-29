@@ -120,7 +120,7 @@ display: block; /*viser dropdown ved hover */
 .dropdown-content {
   position: absolute;
   top: 20em;
-  right: 31em;
+  right: 33em;
   z-index: 1000;
   list-style-type: none;
 }
