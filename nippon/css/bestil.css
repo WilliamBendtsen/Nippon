@@ -19,7 +19,7 @@
     grid-template-rows: repeat(4, 1fr);
   }
   
-  
+
   #navbar-logo{
     width: 9.5rem;
     grid-column-start: 3;
@@ -115,7 +115,7 @@
   
   .dropdown-content {
     position: absolute;
-    top: 20em;
+    top: 19em;
     right: 33em;
     z-index: 1000;
     list-style-type: none;
