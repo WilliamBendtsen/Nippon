@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  body {
+      font-family: "Sulphur Point", sans-serif;
+      background-color: #f8f6f0; 
+      color: #4C3B3B;
+      height: 100vh;
+    }
+    
+  
+  /* Styling Navbar START */
+  .navbar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  
+  #navbar-logo{
+    width: 9.5rem;
+    grid-column-start: 3;
+    justify-self: center;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    align-self: center;
+    padding-top: 3%; 
+  }
+  
+  #navbar-waves{
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    width: 100%;
+    grid-row-start: 3;
+    align-self: self-end;
+    height: 3rem;
+    overflow: hidden;
+  }
+  
+  .navbar-icons{
+    grid-column-start: 5;
+    grid-row-start: 1;
+    align-self: center;
+    justify-self: end;
+  }
+  
+  #navbar-styling-element{
+    grid-column: 1 / span 5;
+    grid-row-start: 4;
+    color: rgba(245, 238, 228, 1);
+  }
+  
+  #navbar-link1{
+    color: #0000FF;
+    grid-column: 2 / span 2;
+    align-self: center;
+    justify-self: center;
+    grid-row-start: 4;
+  }
+  
+  #navbar-link2{
+    color: #0000FF;
+    grid-column: 3 / span 2;
+    align-self: center;
+    justify-self: center;
+    grid-row-start: 4;
+  }
+  
+  
+  #navbar-link3{
+    grid-column-start: 5;
+    grid-row-start: 4;
+    justify-self: self-end;
+    align-self: center;
+  }
+  
+  .navbar > :nth-child(4) {
+    background-color: rgba(245, 238, 228, 1);
+    grid-column: 1 / span 5;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+    color: #4C3B3B;
+    margin: 0 .5rem;
+  }
+  
+  
+  /* Styling af dropdown menu */
+  
+  .dropdown-content {
+    display: none; /*sørger for at dropdown ikke vises hele tiden */
+  } 
+  
+  #navbar-link2:hover + .dropdown-content{
+  display: block; /*viser dropdown ved hover */
+  } 
+  
+  
+  .dropdown-content {
+    color: #0000FF;
+    grid-column: 3 / span 2;
+    align-self: start;
+    justify-self: center;
+    grid-row-start:4;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 20em;
+    right: 31em;
+    z-index: 1000;
+    list-style-type: none;
+  }
+  
+  .dropdown-content {
+    background-color: rgba(245, 238, 228, 1);
+    padding: 10px;
+  }
+  
+  .dropdown-content li a {
+    text-align: center;
+    color: #0000FF;
+  
+    display: block;
+    padding: 10px;
+    font-size: 0.75em;
+   }
+  
+   .dropdown-content li a:hover {
+    color: #4C3B3B;
+   }
+  
+   /* Styler så den ikke ændre farver efter klik */
+  
+   .navbar-link:focus {
+    outline: none; /* Remove the default focus outline */
+  }
+  
+  .navbar-link:focus,
+  .navbar-link:active {
+    color: #0000FF; /* Use the same color as the parent element */
+  }
+  
+  
+  /* Styling navbar SLUT */
+  
+  /* styling af main */
+  .bestil {
+    background-color: white;
+    margin: 10%;
+  }
+
+  .bestil-kasse {
+    margin: 3.5rem;
+  }
+
+
+/* Container til at indeholde pilen og overskriften */
+.arrow-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.arrow-container:hover {
+  color: #948585;
+}
+
+/* En tynd pil til venstre */
+.left-arrow::before {
+  content: '\2190'; /* Unicode-pil til venstre */
+  font-size: 3rem; /* Juster størrelsen efter behov */
+  color: #4C3B3B; /* Juster farven efter dine præferencer */
+  margin-top: -8%;
+} 
+
+  /* overskrifter */
+h1 {
+    font-size: 2.5rem;
+  }
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* personer */
+.personer {
+    margin-top: 5%;
+}
+
+.btn {
+    margin-top: 2%;
+    width: 4%;
+    color: #4C3B3B;
+    border-color:#F5EEE4;
+    font-size: larger;
+    margin-left: 1%;
+}
+
+.btn:hover {
+    color: #847e77;
+    cursor: pointer;
+}
+
+/* forbehold */
+.forbehold {
+    margin-top: 7%;
+}
+
+#skriv {
+    margin-top: 2%;
+    color: #4C3B3B;
+    background-color: #F5EEE4;
+    border-color: #F5EEE4;
+    border-style: none;
+    width: 41.5%;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+/* tilføj */
+.checkbox-container {
+    margin-top: 5%;
+    display: flex;
+    background-color: #F5EEE4;
+    width: 41.5%;
+}
+
+ h2 {
+    margin-top: 7%;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+
+#minCheckbox {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.checkbox-text {
+    margin: 2%;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+/* link */
+.tilføj a {
+    color: #4C3B3B;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin: 36%;
+}
+
+.oplevelses-kasse {
+  width: 30%;
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+/* næste bestil til kurv */
+
+
+.text1 {
+  margin-left: 60%;
+  margin-top: -2%;
+  display: flex;
+}
+
+#pris{
+  font-size: 3rem;
+}
+
+#bestil-tekst{
+  font-size: 1rem;
+  margin-bottom: 20%;
+}
+
+#bestil-knap{
+  height: 3rem;
+  width: 7rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  border: none;
+}
+
+  /* Styling af footer */
+/* Styling af billede i footer */
+.footer img {
+    width: 100%;
+    transform: rotate(180deg);
+  }
+  
+   .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5EEE4;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .stor-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .stor-container ul {
+    list-style: none;
+    line-height: 1.5rem;
+    padding: 1rem 8.5rem;
+  }
+  
+  .stor-container h4 {
+    margin: 0; 
+  }
+  
+  /* Styling af nyhedsbrev */
+  .nyhedsbrev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type="email"] {
+    padding: 5px;
+    border: 1px solid #4C3B3B; 
+    background-color: #FAF6F2;
+    font-family: inherit;
+  }
+  
+  button {
+    padding: 5px;
+    border: 1px solid #4C3B3B;
+    background-color: #F5EEE4;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 0 5px;
+  }
+  
+  
+  /* Styling af socials */
+  footer .socials {
+    padding: 1rem;
+    color: #4C3B3B;
+  }
+  
+  .socials {
+    margin-left: -1.8rem;
+  }
+  
+  .socials a {
+    font-size: 25px;
+    color: inherit;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0 15px;
+    color: #0000FF;
+  }

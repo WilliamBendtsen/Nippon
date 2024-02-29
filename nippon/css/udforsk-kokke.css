@@ -1,6 +1,7 @@
 /* Generel CSS for hele siden */
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -51,7 +52,9 @@ body{
   
   #navbar-styling-element{
     grid-column: 1 / span 5;
-    grid-row-start: 4;
+    grid-row: 4;
+    align-self: center;
+    height: 100%;
     color: rgba(245, 238, 228, 1);
   }
   
