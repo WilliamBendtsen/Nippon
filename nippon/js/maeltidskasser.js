@@ -1,6 +1,6 @@
 "use strict";
 
-// Declare modal and modalLinks variables in the global scope
+// Javascript til at åbne og lukke pop-uppen
 const modal = document.querySelector('#oplevelsespakke-modal');
 const openModal = document.querySelector('#oplevelsespakke-laes-mere');
 const closeModal = document.querySelector('#oplevelsespakke-kryds');
@@ -8,7 +8,10 @@ let modalLinks;
 
 openModal.addEventListener('click', () => {
     modal.showModal();
+
     
+// Javascript til at vise bestemte sections ud fra hvilket <a> der er klikket på
+
     // Hide all sections except the first one initially
     const sections = modal.querySelectorAll('section');
     sections.forEach((section, index) => {
@@ -16,12 +19,6 @@ openModal.addEventListener('click', () => {
             section.style.display = 'none';
         }
     });
-
-    // Show the first section initially
-    const firstSection = sections[0];
-    if (firstSection) {
-        firstSection.style.display = 'block';
-    }
 
     // Underline the first <li>
     const firstLink = modalLinks[0];
@@ -91,17 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 });
             }
-    
-            const modal = document.getElementById('oplevelsespakke-modal');
-            modal.showModal();
         });
-    });
-
-    // Add click event listener to the close button
-    const closeButton = document.getElementById('oplevelsespakke-kryds');
-    closeButton.addEventListener('click', function() {
-        const modal = document.getElementById('oplevelsespakke-modal');
-        modal.close();
     });
 });
 
